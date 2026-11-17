@@ -2,6 +2,10 @@
 
 **UrbanPulse AI – A Spatiotemporal Urban Mobility Intelligence and Interactive Digital Twin Platform** is an academic visual analytics prototype by Shivaya Pandey (RA2311056010032), for 21CSE423T — Big Data Visualization, under Dr. Varun P. It explores historical New York City yellow taxi trips, January–March 2025. It is not a live traffic feed or a validated real-time digital twin.
 
+**Public source:** https://github.com/shivayapandey/urbanpulse-ai
+
+**Live application and API:** deployment pending; no public URL is claimed until tested.
+
 ## Explore
 
 - **Command Center:** trip counts, daily trend and leading pickup zone.
