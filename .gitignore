@@ -1,0 +1,21 @@
+# dependencies and build output
+node_modules
+node_modules/
+dist/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vercel/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+# trip-level data can be reconstructed from official sources
+data/raw/yellow_tripdata_*.parquet
+data/processed/trips.parquet
+# exclude generated backups and archives, keeping official geometry
+*.zip
+!data/raw/taxi_zones.zip

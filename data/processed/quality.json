@@ -1,0 +1,69 @@
+{
+  "n": 11198026,
+  "missing_required": 0,
+  "pickup_outside_period": 25,
+  "invalid_duration": 33457,
+  "invalid_distance": 294934,
+  "invalid_location": 102736,
+  "null_tpep_pickup_datetime": 0,
+  "null_tpep_dropoff_datetime": 0,
+  "null_PULocationID": 0,
+  "null_DOLocationID": 0,
+  "null_trip_distance": 0,
+  "cleaned": 10776622,
+  "exact_duplicate_excess_rows": 0,
+  "coverage": [
+    "2025-01-01 00:00:00",
+    "2025-03-31 23:59:59",
+    258,
+    257,
+    0.01,
+    97.3,
+    239.06666666666666
+  ],
+  "monthly": [
+    {
+      "period": "2025-01",
+      "trips": 3348902,
+      "mean_distance": 3.0971076340839527,
+      "mean_duration": 14.571410768862803
+    },
+    {
+      "period": "2025-02",
+      "trips": 3443200,
+      "mean_distance": 3.061332644051697,
+      "mean_duration": 14.990114321948663
+    },
+    {
+      "period": "2025-03",
+      "trips": 3984520,
+      "mean_distance": 3.2637921481126053,
+      "mean_duration": 15.608668739689506
+    }
+  ],
+  "timings_seconds": {
+    "quality_scan": 0.33,
+    "clean_materialize": 0.634,
+    "exact_duplicate_scan": 1.178,
+    "aggregations_and_parquet": 0.389,
+    "model_training": 0.555
+  },
+  "source_files": [
+    {
+      "name": "yellow_tripdata_2025-01.parquet",
+      "bytes": 59158238,
+      "sha256": "9af277e4c0d3f9deb30644da822981e1e7df6af58313170fd3aa8a474485488a"
+    },
+    {
+      "name": "yellow_tripdata_2025-02.parquet",
+      "bytes": 60343086,
+      "sha256": "037cba555a73663f3a51a2c27816e40e3feb364769942bdf122b9da31e377bd3"
+    },
+    {
+      "name": "yellow_tripdata_2025-03.parquet",
+      "bytes": 69964745,
+      "sha256": "20c4b77cce457b7cfdae77c5069ca7dc91c167f876a41467f4502ab69487a186"
+    }
+  ],
+  "total_elapsed_seconds": 5.65
+}

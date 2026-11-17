@@ -1,0 +1,46 @@
+[
+  {
+    "train_start": "2025-01-08 00:00:00",
+    "train_end": "2025-01-31 23:00:00",
+    "test_start": "2025-02-01 00:00:00",
+    "test_end": "2025-02-07 23:00:00",
+    "n": 168,
+    "baseline_mae": 409.54,
+    "baseline_rmse": 608.05,
+    "model_mae": 335.01,
+    "model_rmse": 487.92
+  },
+  {
+    "train_start": "2025-01-08 00:00:00",
+    "train_end": "2025-02-07 23:00:00",
+    "test_start": "2025-02-08 00:00:00",
+    "test_end": "2025-02-14 23:00:00",
+    "n": 168,
+    "baseline_mae": 536.56,
+    "baseline_rmse": 820.6,
+    "model_mae": 429.45,
+    "model_rmse": 700.27
+  },
+  {
+    "train_start": "2025-01-08 00:00:00",
+    "train_end": "2025-02-14 23:00:00",
+    "test_start": "2025-02-15 00:00:00",
+    "test_end": "2025-02-21 23:00:00",
+    "n": 168,
+    "baseline_mae": 632.23,
+    "baseline_rmse": 934.52,
+    "model_mae": 444.07,
+    "model_rmse": 637.29
+  },
+  {
+    "train_start": "2025-01-08 00:00:00",
+    "train_end": "2025-02-21 23:00:00",
+    "test_start": "2025-02-22 00:00:00",
+    "test_end": "2025-02-28 23:00:00",
+    "n": 168,
+    "baseline_mae": 538.88,
+    "baseline_rmse": 757.67,
+    "model_mae": 319.76,
+    "model_rmse": 464.27
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "seasonal_naive": {
+    "MAE": 557.42,
+    "RMSE": 880.03
+  },
+  "model": {
+    "MAE": 381.46,
+    "RMSE": 623.24
+  },
+  "train_start": "2025-01-08 00:00:00",
+  "train_end": "2025-02-28 23:00:00",
+  "test_start": "2025-03-01 00:00:00",
+  "test_end": "2025-03-31 23:00:00",
+  "test_n": 744,
+  "features": [
+    "lag_1",
+    "lag_24",
+    "lag_168",
+    "rolling_24",
+    "hour",
+    "weekday"
+  ]
+}
