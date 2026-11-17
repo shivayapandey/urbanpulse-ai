@@ -4,7 +4,8 @@
 
 **Public source:** https://github.com/shivayapandey/urbanpulse-ai
 
-**Live application and API:** deployment pending; no public URL is claimed until tested.
+**Live application:** https://urbanpulse-ai-beryl.vercel.app  
+**Backend API:** https://urbanpulse-ai-api.onrender.com/api/health
 
 ## Explore
 
@@ -57,7 +58,7 @@ For the optional browser walkthrough, install `pip install -r requirements-dev.t
 
 ## Deployment
 
-`render.yaml` defines a **free** Render Python web service; it binds to `0.0.0.0:$PORT`. Connect this repository as a Render Blueprint and set `CORS_ORIGINS` to the final frontend origin. The service reads its versioned files from the deployment; it does not require a persistent disk. Render free instances can sleep after 15 minutes without traffic and take roughly a minute to wake. The fixed date range and precomputed model results are historical, not a live prediction service.
+`render.yaml` defines a **free** Render Python web service; it binds to `0.0.0.0:$PORT`. Connect this repository as a Render Blueprint and set `CORS_ORIGINS` to the final frontend origin. The service reads its versioned files from the deployment; it does not require a persistent disk. Render free instances can sleep after 15 minutes without traffic and take roughly a minute to wake. This deployment uses manual deployment triggers; pushes to GitHub do not automatically update the live services. The fixed date range and precomputed model results are historical, not a live prediction service.
 
 Create a Vercel Hobby project with root directory `frontend`, Vite build command `npm run build`, output directory `dist`, and `VITE_API_BASE_URL` set to the Render origin. Add the resulting Vercel origin to Render's `CORS_ORIGINS`, redeploy both as needed, and verify the public site and `/api/health`. A local proxy is only used in development. See [Render free limits](https://render.com/docs/free) and [Vercel Hobby limits](https://vercel.com/docs/plans/hobby); confirm account terms and costs before selecting any paid plan.
 
