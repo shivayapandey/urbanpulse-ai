@@ -53,6 +53,8 @@ python -m unittest discover -s tests -p 'test_api.py' -v
 cd frontend && npm run build
 ```
 
+For the optional browser walkthrough, install `pip install -r requirements-dev.txt` and `python -m playwright install chromium`, start both services as above, then run `python tests/browser_smoke.py` from the repository root. Set `URBANPULSE_URL` to test another deployment or `CHROME_PATH` to use an installed Chrome binary. `tests/audit_results.py` additionally requires the trip-level Parquet files, which are not included in the repository.
+
 ## Deployment
 
 `render.yaml` defines a **free** Render Python web service; it binds to `0.0.0.0:$PORT`. Connect this repository as a Render Blueprint and set `CORS_ORIGINS` to the final frontend origin. The service reads its versioned files from the deployment; it does not require a persistent disk. Render free instances can sleep after 15 minutes without traffic and take roughly a minute to wake. The fixed date range and precomputed model results are historical, not a live prediction service.
